@@ -4,3 +4,9 @@
 [submodule "meta-arm"]
 	path = meta-arm
 	url = https://git.yoctoproject.org/git/meta-arm
+[submodule "meta-ti"]
+	path = meta-ti
+	url = git@github.com:sujoyray-ucolorado/meta-ti-aesd-project.git
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
