@@ -1,0 +1,37 @@
+#!/bin/sh
+#/*****************************************************************************
+#* Copyright (C) 2023 by Sujoy Ray
+#*
+#* Redistribution, modification or use of this software in source or binary
+#* forms is permitted as long as the files maintain this copyright. Users are
+#* permitted to modify this and use it to learn about the field of embedded
+#* software. Sujoy Ray and the University of Colorado are not liable for
+#* any misuse of this material.
+#*
+#*****************************************************************************/
+#/**
+#* @file  aesdsocket-mount-drive
+#* @brief : The script is responsible for mounting SATA drive
+#*
+#* @author Sujoy Ray
+#* @date April 26, 2023
+#* @version 1.0
+#* CREDIT: Header credit: University of Colorado coding standard
+#*   
+#*
+#*/
+
+case "$1" in
+  start)
+    echo "Starting HDD mounting service..."
+    /bin/sh /usr/bin/mount-hdd.sh
+    ;;
+  stop)
+    echo "Stopping HDD mounting service..."
+    ;;
+  *)
+    echo "Usage : $0 {start | stop}"
+    exit 1;
+   ;;
+esac
+exit 0;
